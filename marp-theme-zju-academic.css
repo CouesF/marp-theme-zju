@@ -1,0 +1,119 @@
+/* @theme zhejiang */
+
+@import 'gaia';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+  --color-highlight: #1b4285;
+}
+
+section {
+  background-image: none;
+  font-family: 'Noto Sans SC', sans-serif;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+/* https://github.com/marp-team/marpit/issues/271 */
+section::after {
+  font-weight: 700;
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+}
+
+ul ul {
+  font-size: 0.9em;
+}
+
+section.lead h1 {
+  color: #1b4285;
+  text-align: left;
+}
+section.lead h1 strong {
+  -webkit-text-stroke: 1px #1b4285;
+}
+section.lead h2 {
+  color: #1b4285;
+  text-align: left;
+}
+section.lead h2 strong {
+  -webkit-text-stroke: 1px #1b4285;
+}
+section.lead h3 {
+  color: #1b4285;
+  text-align: left;
+}
+section.lead h3 strong {
+  -webkit-text-stroke: 1px #1b4285;
+}
+section.lead h4 {
+  color: #1b4285;
+  text-align: left;
+}
+section.lead h4 strong {
+  -webkit-text-stroke: 1px #1b4285;
+}
+section.lead h5 {
+  color: #1b4285;
+  text-align: left;
+}
+section.lead h5 strong {
+  -webkit-text-stroke: 1px #1b4285;
+}
+section.lead p {
+  text-align: right;
+}
+
+header {
+  background-color: #1b4285;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+header::after {
+  content: '';
+  position: absolute; /* 绝对定位 */
+  right: 10px; /* 右侧位置 */
+    top: -15%; 
+  /* transform: translateY(-10%); 确保垂直居中 */
+  background-image: url('https://raw.githubusercontent.com/CouesF/OpenImageBed/master/uPic/2024-01-10-20_32-浙江大学logo-白.png'); /* 浙江大学 logo */
+  background-size: contain; /* 保持 logo 的尺寸 */
+  background-repeat: no-repeat; /* 不重复 */
+  width: 200px; /* logo 的宽度 */
+  height: 200px; /* logo 的高度 */
+}
+
+blockquote {
+  max-width: 90%;
+  border-top: 0.1em dashed #555;
+  font-size: 60%;
+  position: absolute;
+  bottom: 20px;
+}
+blockquote::before {
+  content: "";
+}
+blockquote::after {
+  content: "";
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* 右对齐图像，左侧留空间放文本 */
+img[alt~="right"] {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
