@@ -18,6 +18,9 @@ To use this theme in your Marp presentations, follow these steps:
     ```markdown
     ---
     theme: 'zju-academic'
+    size: 16:9
+    marp: true
+    paginate: true
     ---
     ```
 
@@ -38,6 +41,4 @@ Feel free to fork this repository and customize the theme further to suit your s
 
 This project is licensed under [MIT License](LICENSE). See the LICENSE file for more details.
 
----
 
-您可以根据您项目的具体情况对这个模板进行调整和补充。
